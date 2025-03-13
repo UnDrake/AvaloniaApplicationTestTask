@@ -78,7 +78,7 @@ namespace AvaloniaApplicationTestTask.Services
         private static SettingsModel GetDefaultSettings() => new()
         {
             SliderValue = 50,
-            NumericValue = 0.00m,
+            NumericValue = 0.0m,
             CheckboxState = false,
             SelectedRadio = "A",
             SelectedCombo = "Опція 1"
