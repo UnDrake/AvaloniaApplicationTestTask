@@ -1,0 +1,40 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AvaloniaApplicationTestTask.Views.MainWindow"
+        Title="Test Task"
+        Width="420" Height="630">
+    
+    <StackPanel Spacing="5" Margin="5" Background="Black">
+        <Rectangle Height="0.5" Fill="Gray" HorizontalAlignment="Stretch" Opacity="0.5"/>
+        <Border BorderBrush="White" BorderThickness="2" Width="350" Height="200" Background="White">
+            <Image Name="graphImage" Stretch="UniformToFill"/>
+        </Border>
+		<Button Name="generateGraphButton" Content="Сгенерувати графік" HorizontalAlignment="Center"/>
+
+        <Rectangle Height="0.5" Fill="Gray" HorizontalAlignment="Stretch" Opacity="0.5"/>
+        <Slider Name="slider" Minimum="0" Maximum="100" Value="50" Foreground="Blue" Width="200"/>
+        
+        <Rectangle Height="0.5" Fill="Gray" HorizontalAlignment="Stretch" Opacity="0.5"/>
+        <NumericUpDown Name="numericInput" Minimum="0" Maximum="100" Width="200"/>
+
+        <Rectangle Height="0.5" Fill="Gray" HorizontalAlignment="Stretch" Opacity="0.5"/>
+        <ComboBox Name="comboBox" Width="200" HorizontalAlignment="Center"/>
+
+        <Rectangle Height="0.5" Fill="Gray" HorizontalAlignment="Stretch" Opacity="0.5"/>
+        <CheckBox Name="checkBox" Content="Якийсь параметр" Foreground="White" HorizontalAlignment="Center"/>
+
+        <Rectangle Height="0.5" Fill="Gray" HorizontalAlignment="Stretch" Opacity="0.5"/>
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock Text="Радіо кнопка" Foreground="White"/>
+            <RadioButton Name="radioA" Content="A" Foreground="White"/>
+            <RadioButton Name="radioB" Content="B" Foreground="White"/>
+            <RadioButton Name="radioC" Content="C" Foreground="White"/>
+        </StackPanel>
+
+        <Rectangle Height="0.5" Fill="Gray" HorizontalAlignment="Stretch" Opacity="0.5"/>
+        <TextBlock Text="Виконав Андрій Середенко!" Foreground="White" HorizontalAlignment="Center"/>
+
+        <Rectangle Height="0.5" Fill="Gray" HorizontalAlignment="Stretch" Opacity="0.5"/>
+        <Button Name="saveButton" Content="Зберегти" HorizontalAlignment="Center"/>
+    </StackPanel>
+</Window>
